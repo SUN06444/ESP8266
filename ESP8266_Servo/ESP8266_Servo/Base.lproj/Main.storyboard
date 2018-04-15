@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="servo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="90" minValue="0.0" maxValue="180" translatesAutoresizingMaskIntoConstraints="NO" id="7LH-kI-ITw">
+                                <rect key="frame" x="103" y="137" width="169" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="165" id="98a-XF-olN"/>
+                                    <constraint firstAttribute="height" constant="29" id="vaR-O4-HId"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="slider:" destination="BYZ-38-t0r" eventType="valueChanged" id="F41-dh-cwQ"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="90" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ztp-1U-Umz">
+                                <rect key="frame" x="139" y="78" width="97" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="Bwp-C9-DzF"/>
+                                    <constraint firstAttribute="height" constant="32" id="dkU-cB-Fzz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SIn-fD-VQC">
+                                <rect key="frame" x="67" y="292" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="XEA-Hz-ppt"/>
+                                    <constraint firstAttribute="height" constant="128" id="ms1-DN-QzZ"/>
+                                </constraints>
+                            </webView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SG90.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="MI1-d3-9oj">
+                                <rect key="frame" x="67" y="201" width="247" height="241"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7LH-kI-ITw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="105" id="1ow-J9-C09"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ztp-1U-Umz" secondAttribute="trailing" constant="139" id="2Zj-nE-HqB"/>
+                            <constraint firstItem="7LH-kI-ITw" firstAttribute="top" secondItem="Ztp-1U-Umz" secondAttribute="bottom" constant="27" id="2a4-p2-EMh"/>
+                            <constraint firstItem="Ztp-1U-Umz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="139" id="Efe-Ak-9zM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SIn-fD-VQC" secondAttribute="trailing" constant="68" id="N0d-62-TkD"/>
+                            <constraint firstItem="SIn-fD-VQC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="SqF-yr-uhQ"/>
+                            <constraint firstItem="Ztp-1U-Umz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="58" id="emc-2V-UL8"/>
+                            <constraint firstItem="MI1-d3-9oj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="k8m-94-iAu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MI1-d3-9oj" secondAttribute="trailing" constant="61" id="rdf-Pe-JG2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MI1-d3-9oj" secondAttribute="bottom" constant="225" id="sNt-v1-D6A"/>
+                            <constraint firstItem="SIn-fD-VQC" firstAttribute="top" secondItem="7LH-kI-ITw" secondAttribute="bottom" constant="126" id="uDP-6W-D3G"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7LH-kI-ITw" secondAttribute="trailing" constant="105" id="xVI-mf-kJf"/>
+                            <constraint firstItem="MI1-d3-9oj" firstAttribute="top" secondItem="7LH-kI-ITw" secondAttribute="bottom" constant="35" id="xfo-4t-ibi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="lbl" destination="Ztp-1U-Umz" id="dbh-AS-ieO"/>
+                        <outlet property="web" destination="SIn-fD-VQC" id="cvV-nf-Kb2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="SG90.jpeg" width="225" height="225"/>
+    </resources>
+</document>

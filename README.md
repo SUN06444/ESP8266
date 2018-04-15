@@ -19,3 +19,5 @@ Arduino + ESP8266 + DHT11 + ThingSpeak(偵測溫濕度，並透過ThingSpeak產�
  (C) ThingSpeak 數據圖：
   <p align="center"><img src="https://github.com/SUN06444/ESP8266/blob/master/ESP8266_DHT11_ThingSpeak/ThingSpeak.png"></p>
 
+參考網址： https://roboindia.com/tutorials/nodeMCU-dht11-thingspeak-data-upload
+
